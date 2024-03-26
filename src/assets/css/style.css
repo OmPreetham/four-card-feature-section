@@ -1,0 +1,141 @@
+:root {
+  /* Fonts */
+
+  /* Font Family */
+
+  --ff-poppins: sans-serif;
+
+  /* Font Weights */
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  /* Font Sizes */
+
+  --fs-small: 0.9rem;
+  --fs-normal: 1.1rem;
+  --fs-medium: 1.3rem;
+  --fs-large: 2.5rem;
+
+  /* Colors */
+
+  /* Primary */
+
+  --clr-primary-red: hsl(0, 78%, 62%);
+  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-orange: hsl(34, 97%, 64%);
+  --clr-primary-blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --clr-natural-very-dark-blue: hsl(234, 12%, 34%);
+  --clr-natural-grayish-blue: hsla(229, 6%, 66%, 0.733);
+  --clr-natural-very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-400);
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+h1,
+h2 {
+  color: var(--clr-natural-very-dark-blue);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-weight: var(--fw-light);
+}
+
+p {
+  color: var(--clr-natural-grayish-blue);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.wrapper--narrow {
+  max-width: 550px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wrapper--narrow > h1 {
+  font-size: var(--fs-large);
+}
+.wrapper--narrow > p {
+  font-size: var(--fs-normal);
+}
+
+.layout-grid {
+  --gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.card {
+  --bt: 0.33rem;
+  padding: 2em;
+  border-top: var(--bt) solid;
+  box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.674);
+}
+
+h2 {
+  font-size: var(--fs-medium);
+}
+
+.card > p {
+  font-size: var(--fs-small);
+  margin-bottom: 2rem;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+}
+
+.border-cyan {
+  color: var(--clr-primary-cyan);
+}
+.border-red {
+  color: var(--clr-primary-red);
+}
+.border-orange {
+  color: var(--clr-primary-orange);
+}
+.border-blue {
+  color: var(--clr-primary-blue);
+}
+
+@media screen and (max-width: 800px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
