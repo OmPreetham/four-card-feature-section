@@ -23,7 +23,7 @@ const FourCard = () => {
                     <h2>Supervisor</h2>
                     <p>Monitors activity to identify project roadblocks</p>
                     <img
-                      src="/images/icon-supervisor.svg"
+                      src="images/icon-supervisor.svg"
                       alt="Supervisor Icon"
                     />
                   </div>
@@ -38,7 +38,7 @@ const FourCard = () => {
                       your project
                     </p>
                     <img
-                      src="/images/icon-team-builder.svg"
+                      src="images/icon-team-builder.svg"
                       alt="Team Bilder Icon"
                     />
                   </div>
@@ -47,7 +47,7 @@ const FourCard = () => {
                   <div className="card border-orange">
                     <h2>Karma</h2>
                     <p>Regularly evaluates our talent to ensure quality</p>
-                    <img src="/images/icon-karma.svg" alt="Karma Icon" />
+                    <img src="images/icon-karma.svg" alt="Karma Icon" />
                   </div>
                 </article>
               </div>
@@ -60,7 +60,7 @@ const FourCard = () => {
                       estimates
                     </p>
                     <img
-                      src="/images/icon-calculator.svg"
+                      src="images/icon-calculator.svg"
                       alt="Calculator Icon"
                     />
                   </div>
